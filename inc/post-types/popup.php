@@ -3,16 +3,16 @@
 function cube_popup_post_type() {
 
   $labels = [
-    'name'                  => 'Попап',
-    'singular_name'         => 'Попап',
-    'menu_name'             => 'Попапи',
-    'name_admin_bar'        => 'Попапи',
-    'add_new_item'          => 'Додати Попап',
+    'name'                  => 'Popup',
+    'singular_name'         => 'Popup',
+    'menu_name'             => 'Popups',
+    'name_admin_bar'        => 'Popups',
+    'add_new_item'          => 'Add Popup',
   ];
 
   $args = [
     'labels'                => $labels,
-    'label'                 => 'Попапи',
+    'label'                 => 'Popups',
     'supports'              => ['title'],
     'menu_icon'             => 'dashicons-format-status',
     'menu_position'         => 5,
