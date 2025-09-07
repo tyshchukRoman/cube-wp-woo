@@ -9,14 +9,14 @@ $content = carbon_get_theme_option('404__content');
 <main class="not-found" id="main">
 
 <section class="not-found | section">
-  <div class="content__wrapper | wrapper">
+  <div class="content__container | container">
     <div class="not-found__prose | prose">
       <?php echo wpautop($content) ?>
     </div>
 
     <div class="not-found__button | cluster">
       <a href="<?php echo home_url() ?>" class="button">
-        <?php esc_html_e('На Головну', 'cube-wp') ?>
+        <?php esc_html_e('Back to home', 'cube-wp') ?>
       </a>
     </div>
   </div>

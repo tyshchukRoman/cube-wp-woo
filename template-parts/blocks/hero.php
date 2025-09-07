@@ -13,10 +13,14 @@ $button_1__text = carbon_get_post_meta(get_the_ID(), 'main-hero__button-1-text')
 $button_2__url = carbon_get_post_meta(get_the_ID(), 'main-hero__button-2-url');
 $button_2__text = carbon_get_post_meta(get_the_ID(), 'main-hero__button-2-text');
 
+if(!$title) {
+  return;
+}
+
 ?>
 
 <section class="hero | section">
-  <div class="wrapper">
+  <div class="container">
     <div class="grid" data-layout="50-50">
       <div class="hero__content | prose">
         <?php if($title): ?>
@@ -28,15 +32,15 @@ $button_2__text = carbon_get_post_meta(get_the_ID(), 'main-hero__button-2-text')
         <?php endif; ?>
       </div>
 
-      <div class="hero__image">
-        <?php if($image): ?>
+      <?php if($image): ?>
+        <div class="hero__image">
           <?php echo wp_get_attachment_image($image, 'large', false, [
             'loading' => false,
             'decoding' => 'sync',
             'fetchpriority' => 'high'
           ]) ?>
-        <?php endif; ?>
-      </div>
+        </div>
+      <?php endif; ?>
     </div>
   </div>
 </section>

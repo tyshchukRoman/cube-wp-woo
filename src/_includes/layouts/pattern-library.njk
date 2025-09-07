@@ -20,7 +20,7 @@
 {% endset %}
 
 {% block content %}
-  <div class="pattern-library wrapper">
+  <div class="pattern-library container">
     <header class="pattern-library__header flow">
       {{ brandNav | safe }}
     </header>
@@ -49,7 +49,7 @@
         </div>
       </nav>
       <div>
-        <div class="wrapper flow prose pt-2xl">
+        <div class="container flow prose pt-2xl">
           <h1 class="cluster">
             {{ pageTitle if pageTitle else title }}
             {% if '/component' in page.url %}

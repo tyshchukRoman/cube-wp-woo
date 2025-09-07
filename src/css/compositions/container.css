@@ -1,12 +1,12 @@
 /*
-WRAPPER COMPOSITION 
-A common wrapper/container
+Container COMPOSITION 
+A common container
 */
-.wrapper {
-  --wrapper-max-width: 1464px;
+.container {
+  --container-max-width: 1464px;
 
   width: 100%;
-  max-width: var(--wrapper-max-width, 1464px);
+  max-width: var(--container-max-width, 1464px);
   padding-inline: 1rem;
   margin-inline: auto;
   position: relative;

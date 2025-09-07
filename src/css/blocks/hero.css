@@ -2,4 +2,8 @@
   .grid {
     align-items: center;
   }
+
+  .hero__image {
+    margin: 0 auto;
+  }
 }

@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="wrapper">
+  <div class="container">
     <div class="header__inner">
 
       <!-- Logo -->

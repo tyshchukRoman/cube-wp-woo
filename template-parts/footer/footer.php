@@ -31,7 +31,7 @@ $menus = array_map(function($menu_id, $location) {
 ?>
 
 <footer class="footer" id="footer">
-	<div class="wrapper">
+	<div class="container">
     <div class="footer__inner | flow">
       <a href="<?php echo home_url() ?>" class="footer__logo">
         <?php echo get_inline_svg('light-logo.svg') ?>
