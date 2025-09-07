@@ -13,5 +13,6 @@
 @import-glob 'utilities/*.css';
 @import-glob 'blocks/*.css';
 @import-glob 'vendors/*.css';
+@import-glob 'woocommerce/*.css';
 
 @import 'tailwindcss/utilities';

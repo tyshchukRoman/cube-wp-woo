@@ -16,7 +16,7 @@ body {
 }
 
 main {
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 :is(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) {
@@ -286,18 +286,6 @@ svg[role='img'][width][height] {
   padding: var(--space-xs);
 }
 
-form > *:first-child {
-  margin-block: 0;
-}
-
-form > * + * {
-  margin-top: var(--flow-space, 1.5rem);
-}
-
-.form-fields > * + * {
-  margin-top: var(--flow-space, 1rem);
-}
-
 :is(input, select, textarea) {
   accent-color: var(--color-primary);
 }
@@ -324,15 +312,9 @@ input:is([type='tel']) {
 }
 
 label {
+  display: block;
+  margin-bottom: 0.5rem;
   line-height: var(--leading-standard);
-}
-
-/* Usually label wraps checkbox and radio buttons, so we give ourselves more layout and text-flow control with flex */
-label:has(input) {
-  display: flex;
-  align-items: baseline;
-  flex-direction: column;
-  gap: 2px;
 }
 
 /* Slightly adjusts the vertical position of the check/radio */

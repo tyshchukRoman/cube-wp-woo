@@ -14,7 +14,7 @@ add_action('after_setup_theme', function () {
     remove_action('woocommerce_after_main_content',  'woocommerce_output_content_wrapper_end', 10);
 
     add_action('woocommerce_before_main_content', function () {
-      echo '<main class="main woocommerce" id="main"><section class="section"><div class="container">';
+      echo '<main class="main" id="main"><section class="section"><div class="container">';
     }, 10);
 
     add_action('woocommerce_after_main_content',  function() {
@@ -34,7 +34,7 @@ add_filter('the_content', function ($content) {
     ) {
         // Avoid double-wrapping if our <main id="main"> is already there
         if (strpos($content, 'id="main"') === false) {
-            $open  = '<main class="main woocommerce" id="main"><section class="section"><div class="container">';
+            $open  = '<main class="main" id="main"><section class="section"><div class="container">';
             $close = '</div></section></main>';
             return $open . $content . $close;
         }

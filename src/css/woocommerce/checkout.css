@@ -1,0 +1,39 @@
+.woocommerce-checkout {
+
+  /*
+   * Make grid layout for checkout
+   */
+  form.checkout {
+    display: grid;
+    grid-template-columns: 1fr 35rem;
+    gap: 2rem;
+  }
+
+  /*
+   * General spacings
+   */
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  .woocommerce-billing-fields__field-wrapper > * + *,
+  .woocommerce-checkout-review-order * + * {
+    margin-top: 1rem;
+  }
+
+  .col2-set > * + * {
+    margin-top: 2rem;
+  }
+
+  /*
+   * Order details table styling
+   */
+  .shop_table * + * {
+    margin-top: 0;
+  }
+
+  .shop_table tr *:first-child {
+    padding-left: 0;
+  }
+
+}
