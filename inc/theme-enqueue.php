@@ -8,9 +8,7 @@ function cube_wp_enqueue() {
    * CSS
    */
   $styles = [
-    'not-found' => is_404(),
-    'homepage'  => is_front_page(),
-    'simple'    => is_page_template('template-pages/simple.php'),
+    'global' => true
   ];
 
   foreach ($styles as $key => $condition) {

@@ -1,20 +1,17 @@
 <?php
 /*
- * Template Name: Simple
+ * Template Name: Simple Page
  */
-
-$content = carbon_get_post_meta(get_the_ID(), 'content');
-
 get_header(); ?>
 
 <main class="page simple-page" id="main">
 
 <section class="content | section">
   <div class="content__wrapper | wrapper">
-    <h1 class="content__title | h2"><?php the_title() ?></h1>
+    <h1 class="content__title"><?php the_title() ?></h1>
 
     <div class="prose">
-      <?php echo wpautop($content) ?>
+      <?php the_content() ?>
     </div>
   </div>
 </section>

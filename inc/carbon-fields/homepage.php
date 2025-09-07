@@ -3,15 +3,16 @@
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
-Container::make('post_meta', __('Головна сторінка'))
+Container::make('post_meta', __('Home Fields'))
 
-  ->add_tab('Хіро', [
-    Field::make('text', 'main-hero__title', 'Заголовок'),
-    Field::make('text', 'main-hero__description', 'Опис'),
-    Field::make('text', 'main-hero__button-1-url', 'Кнопка 1 (Посилання)')->set_width('50%'),
-    Field::make('text', 'main-hero__button-1-text', 'Кнопка 1 (Текст)')->set_width('50%'),
-    Field::make('text', 'main-hero__button-2-url', 'Кнопка 2 (Посилання)')->set_width('50%'),
-    Field::make('text', 'main-hero__button-2-text', 'Кнопка 2 (Текст)')->set_width('50%'),
+  ->add_tab('Hero', [
+    Field::make('text', 'main-hero__title', 'Title'),
+    Field::make('image', 'main-hero__image', 'Image'),
+    Field::make('text', 'main-hero__description', 'Description'),
+    Field::make('text', 'main-hero__button-1-url', 'Button 1 (URL)')->set_width('50%'),
+    Field::make('text', 'main-hero__button-1-text', 'Button 1 (Text)')->set_width('50%'),
+    Field::make('text', 'main-hero__button-2-url', 'Button 2 (URL)')->set_width('50%'),
+    Field::make('text', 'main-hero__button-2-text', 'Button 2 (Text)')->set_width('50%'),
   ])
 
   ->where( 'post_type', '=', 'page' )

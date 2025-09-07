@@ -3,16 +3,16 @@
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
-Container::make('post_meta', __('Попап'))
+Container::make('post_meta', __('Popup'))
 
   ->add_fields([
-    Field::make('text', 'id', 'Посилання')->set_width('50%'),
-    Field::make('text', 'autoopen', 'Час для самовідкриття')
+    Field::make('text', 'id', 'Link')->set_width('50%'),
+    Field::make('text', 'autoopen', 'Autoopen time')
       ->set_width('50%')
       ->set_attribute('type', 'number')
-      ->set_attribute('placeholder', 'Час в секундах'),
-    Field::make('rich_text', 'title', 'Заголовок'),
-    Field::make('association', 'form', 'Форма')
+      ->set_attribute('placeholder', 'time in seconds'),
+    Field::make('rich_text', 'title', 'Title'),
+    Field::make('association', 'form', 'Form')
       ->set_types([
         [
           'type' => 'post',

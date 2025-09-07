@@ -1,5 +1,8 @@
 <?php
 
+/*
+ * Supports and Menus
+ */
 function cube_support(){
 	load_theme_textdomain( 'cube-wp', get_template_directory() . '/languages' );
 
@@ -19,17 +22,6 @@ function cube_support(){
 }
 
 add_action( 'after_setup_theme', 'cube_support', 0 );
-
-
-/*
- * Disable editors in posts and pages
- */
-function disable_editors_for_posts_and_pages() {
-    remove_post_type_support('post', 'editor');
-    remove_post_type_support('page', 'editor');
-}
-
-add_action('init', 'disable_editors_for_posts_and_pages');
 
 
 /*
